@@ -1,0 +1,22 @@
+<h1>Score</h1>
+
+
+<p>YOUR GUESS: <%= @guess %> </p>
+
+
+<p>Time taken:<%= @result[:time] %></p>
+<p>Your socre:<%= @result[:score] %></p>
+<p>Message:<%= @result[:message]%></p>
+
+<!-- # puts "Your word: #{attempt}"
+    # puts "Time Taken to answer: #{result[:time]}"
+    # puts "Your score: #{result[:score]}"
+    # puts "Message: #{result[:message]}"
+ -->
+
+<%= link_to 'Play again!', game_path %>
+
+
+ <!-- "Time Taken to answer: #{result[:time]}"
+ "Your score: #{result[:score]}"
+  "Message: #{result[:message]}"  -->
