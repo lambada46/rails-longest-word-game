@@ -1,22 +1,14 @@
-<h1>Score</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-4 col-sm-4">
+      <h1>Score</h1>
 
+      <h3>YOUR GUESS: <%= @guess %> </h3>
+      <h4>Time taken: <%= @result[:time] %></h4>
+      <h4>Your socre: <%= @result[:score] %></h4>
+      <h4>Message: <%= @result[:message]%></h4>
 
-<p>YOUR GUESS: <%= @guess %> </p>
-
-
-<p>Time taken:<%= @result[:time] %></p>
-<p>Your socre:<%= @result[:score] %></p>
-<p>Message:<%= @result[:message]%></p>
-
-<!-- # puts "Your word: #{attempt}"
-    # puts "Time Taken to answer: #{result[:time]}"
-    # puts "Your score: #{result[:score]}"
-    # puts "Message: #{result[:message]}"
- -->
-
-<%= link_to 'Play again!', game_path %>
-
-
- <!-- "Time Taken to answer: #{result[:time]}"
- "Your score: #{result[:score]}"
-  "Message: #{result[:message]}"  -->
+      <%= link_to 'Play again!', game_path %>
+    </div>
+  </div>
+</div>
